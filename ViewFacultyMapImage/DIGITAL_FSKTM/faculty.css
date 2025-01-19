@@ -1,0 +1,164 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('/bgimage2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.font-h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 20px; 
+}
+.text-insert { 
+    display: flex; 
+    font-size: 22.2px; 
+    color: rgb(255, 255, 255);
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 57%;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.rectangle-image {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+
+.zoom-in, .zoom-out {
+    position: fixed;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+    text-align: center; /* Center the text inside */
+}
+
+.zoom-in {
+    bottom: 20px;
+    right: 20px;
+}
+
+.zoom-out {
+    bottom: 70px; /* Slightly above the zoom-in button */
+    right: 20px;
+}
+
+.gallery {
+    position: absolute;
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%);
+    width: 15%;
+    height: 80%; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    border: 2px solid #ccc;
+    background-color: white;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height: 100%; 
+}
+
+.images-container .image-wrapper {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden; 
+    display: flex;
+}
+
+.images-container img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 5px; 
+    object-fit: cover; 
+}
+
+.images-container img:last-child {
+    margin-bottom: 0; 
+}
+
+/*Main Page Return*/
+.container {
+    position: fixed;
+    top: 7%;
+    left: -0.8%;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.return-rectangle {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 5%;
+    left: 5%;
+    background-position: left-top;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 15px;
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.return-rectangle:before {
+    content: "Back To Main Page";
+    position: absolute;
+    bottom: 13%; 
+    left: 8%; 
+    font-size: 16px;
+    font-weight: bold; 
+    color: black; 
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: normal; 
+    line-height: 20px;
+}
+
+.container:hover .return-rectangle {
+    transform: scale(1.05);
+}
