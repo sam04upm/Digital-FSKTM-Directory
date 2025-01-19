@@ -1,0 +1,1 @@
+document.getElementById("sidebarToggle").addEventListener("click",function(){document.getElementById("sidebar").classList.toggle("show")});document.addEventListener("click",function(e){const t=document.getElementById("sidebar"),n=document.getElementById("sidebarToggle");!t.contains(e.target)&&!n.contains(e.target)&&t.classList.remove("show")});

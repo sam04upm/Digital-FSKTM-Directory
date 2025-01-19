@@ -1,0 +1,28 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-DQnlLXFM.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/prototype design.png": {
+    "file": "assets/prototype design-B3TncWL1.png",
+    "src": "resources/css/prototype design.png"
+  },
+  "resources/css/showroom.css": {
+    "file": "assets/showroom-DYYQ84-u.css",
+    "src": "resources/css/showroom.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-TUYNsk_Q.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/show.js": {
+    "file": "assets/show-TUYNsk_Q.js",
+    "name": "show",
+    "src": "resources/js/show.js",
+    "isEntry": true
+  }
+}
