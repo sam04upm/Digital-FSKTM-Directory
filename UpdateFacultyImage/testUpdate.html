@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testUpdate.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <h1 class="nav-title">Upload File</h1>
+      </nav>
+  <main class="dashboard-container">
+    <div class="update-section">
+      <form class="upload-file" action="update.blade.php" method="post" enctype="multipart/form-data">
+        <label class="file-input" for="fileInput">Choose a file:</label>
+        <input class="upload-file2" type="file" name="uploadedFile" id="fileInput" required>
+        <button class="buttonstyle" type="submit">Upload</button>
+      </form>
+    </div>
+  </main>
+    <main>
+      <button class="back-button" onclick="window.location.href='update.html';">Back</button>
+    </main>
+</body>
+</html>
