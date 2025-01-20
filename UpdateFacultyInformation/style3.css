@@ -1,0 +1,143 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenu principal */
+.main-content {
+    position: relative;
+    z-index: 1; /* Place le contenu au-dessus de l'image de fond */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style du header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0950ae;
+    color: #063d86;
+    position: relative;
+}
+
+/* Style du menu hamburger */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+/* Optionnel : changer la couleur des barres au survol */
+.hamburger:hover div {
+    background-color: #063d86;
+}
+
+/* Titre dans le header */
+.header h1 {
+    margin-left: 20px;
+    font-size: 24px;
+    color : #063d86
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+/* File input style */
+input[type="file"] {
+    font-size: 0.9rem;
+}
+
+/* Button styles */
+.btn-group {
+    display: flex;
+    flex-direction: column; /* Mettre les boutons les uns en dessous des autres */
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0950ae; /* Couleur adaptée au style.css */
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #063d86; /* Une teinte légèrement plus foncée */
+}
+
+.btn:active {
+    background: #042b5c;
+}
+
+
+
+/* Style du footer */
+footer {
+    position: fixed; /* Fixe le footer en bas de la page */
+    bottom: 0; /* Aligne le footer au bas */
+    left: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    background-color: #f1f1f1; /* Couleur de fond légère */
+    text-align: center; /* Texte centré */
+    padding: 10px 0; /* Espacement vertical réduit */
+    font-size: 12px; /* Police fine et discrète */
+    color: #555; /* Couleur de texte adoucie */
+    border-top: 1px solid #ddd; /* Ligne subtile en haut */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+
+/* Pied de page 
+footer {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
+*/
+
